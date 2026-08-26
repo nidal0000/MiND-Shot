@@ -62,7 +62,7 @@ jobs:
           # Electron JSON output — disabled on GitHub Actions (stdout not read there)
           OUTPUT_JSON:       '0'
           # Manual "Run workflow" with test_alert=true sends one delivery-test alert.
-          TEST_ALERT:        ${{ inputs.test_alert && '1' || '0' }}
+          TEST_ALERT:        TEST_ALERT: '1'
         run: python mind_shot_engine.py
 
       - name: Commit updated state (race-safe)
