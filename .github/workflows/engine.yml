@@ -13,7 +13,7 @@ on:
     - cron: '* * * * *'          # every minute (subject to GitHub throttling)
   workflow_dispatch:
     inputs:
-      test_alert:
+      test_alert:'1'
         description: 'Send one delivery-test alert (verify webhook -> Telegram), then exit'
         type: boolean
         default: false
